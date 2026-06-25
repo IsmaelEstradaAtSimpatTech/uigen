@@ -1,0 +1,100 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e5]:
+      - heading "React Component Generator" [level=1] [ref=e7]
+      - generic [ref=e9]:
+        - generic [ref=e53]:
+          - generic [ref=e54]:
+            - generic [ref=e57]: Create a pricing card component with a title, price, feature list, and a call-to-action button
+            - img [ref=e60]
+          - generic [ref=e81]:
+            - img [ref=e84]
+            - generic [ref=e89]:
+              - generic [ref=e92]: Created App.jsx
+              - separator [ref=e93]
+              - generic [ref=e96]: Created PricingCard.jsx
+              - separator [ref=e97]
+              - generic [ref=e98]:
+                - paragraph [ref=e99]:
+                  - text: Done! Created a reusable
+                  - code [ref=e100]: PricingCard
+                  - text: "component with:"
+                - list [ref=e101]:
+                  - listitem [ref=e102]: Title, price, and period
+                  - listitem [ref=e103]: Feature list with checkmark icons
+                  - listitem [ref=e104]: Customizable CTA button with primary/secondary variants
+                  - listitem [ref=e105]: Optional highlight state for featured plans
+                  - listitem [ref=e106]: Hover effects and responsive grid layout in the demo
+        - generic [ref=e20]:
+          - textbox "Describe the React component you want to create..." [ref=e21]
+          - button [disabled] [ref=e22]:
+            - img [ref=e23]
+    - separator [ref=e26]
+    - generic [ref=e28]:
+      - generic [ref=e29]:
+        - tablist [ref=e31]:
+          - tab "Preview" [selected] [ref=e32]
+          - tab "Code" [ref=e33]
+        - generic [ref=e34]:
+          - button "Sign In" [ref=e35]
+          - button "Sign Up" [ref=e36]
+      - iframe [ref=e80]:
+        - generic [ref=f2e4]:
+          - generic [ref=f2e6]:
+            - heading "Starter" [level=3] [ref=f2e7]
+            - generic [ref=f2e8]: $29/month
+            - list [ref=f2e9]:
+              - listitem [ref=f2e10]:
+                - img [ref=f2e11]
+                - generic [ref=f2e13]: Up to 10 projects
+              - listitem [ref=f2e14]:
+                - img [ref=f2e15]
+                - generic [ref=f2e17]: 5GB storage
+              - listitem [ref=f2e18]:
+                - img [ref=f2e19]
+                - generic [ref=f2e21]: Basic support
+              - listitem [ref=f2e22]:
+                - img [ref=f2e23]
+                - generic [ref=f2e25]: Community access
+            - button "Get Started" [ref=f2e26] [cursor=pointer]
+          - generic [ref=f2e28]:
+            - heading "Professional" [level=3] [ref=f2e29]
+            - generic [ref=f2e30]: $79/month
+            - list [ref=f2e31]:
+              - listitem [ref=f2e32]:
+                - img [ref=f2e33]
+                - generic [ref=f2e35]: Unlimited projects
+              - listitem [ref=f2e36]:
+                - img [ref=f2e37]
+                - generic [ref=f2e39]: 500GB storage
+              - listitem [ref=f2e40]:
+                - img [ref=f2e41]
+                - generic [ref=f2e43]: Priority support
+              - listitem [ref=f2e44]:
+                - img [ref=f2e45]
+                - generic [ref=f2e47]: Advanced analytics
+              - listitem [ref=f2e48]:
+                - img [ref=f2e49]
+                - generic [ref=f2e51]: Team collaboration
+            - button "Start Free Trial" [ref=f2e52] [cursor=pointer]
+          - generic [ref=f2e54]:
+            - heading "Enterprise" [level=3] [ref=f2e55]
+            - generic [ref=f2e56]: Custompricing
+            - list [ref=f2e57]:
+              - listitem [ref=f2e58]:
+                - img [ref=f2e59]
+                - generic [ref=f2e61]: Everything in Pro
+              - listitem [ref=f2e62]:
+                - img [ref=f2e63]
+                - generic [ref=f2e65]: Unlimited storage
+              - listitem [ref=f2e66]:
+                - img [ref=f2e67]
+                - generic [ref=f2e69]: 24/7 dedicated support
+              - listitem [ref=f2e70]:
+                - img [ref=f2e71]
+                - generic [ref=f2e73]: Custom integrations
+              - listitem [ref=f2e74]:
+                - img [ref=f2e75]
+                - generic [ref=f2e77]: SLA guarantee
+            - button "Contact Sales" [ref=f2e78] [cursor=pointer]
+  - alert [ref=e47]

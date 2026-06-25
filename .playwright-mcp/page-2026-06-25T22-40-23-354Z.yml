@@ -1,0 +1,135 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e5]:
+      - heading "React Component Generator" [level=1] [ref=e7]
+      - generic [ref=e9]:
+        - generic [ref=e53]:
+          - generic [ref=e54]:
+            - generic [ref=e57]: Create a pricing card component with a title, price, feature list, and a call-to-action button
+            - img [ref=e60]
+          - generic [ref=e81]:
+            - img [ref=e84]
+            - generic [ref=e89]:
+              - generic [ref=e92]: Created App.jsx
+              - separator [ref=e93]
+              - generic [ref=e96]: Created PricingCard.jsx
+              - separator [ref=e97]
+              - generic [ref=e98]:
+                - paragraph [ref=e99]:
+                  - text: Done! Created a reusable
+                  - code [ref=e463]: PricingCard
+                  - text: "component with:"
+                - list [ref=e101]:
+                  - listitem [ref=e102]: Title, price, and period
+                  - listitem [ref=e103]: Feature list with checkmark icons
+                  - listitem [ref=e104]: Customizable CTA button with primary/secondary variants
+                  - listitem [ref=e105]: Optional highlight state for featured plans
+                  - listitem [ref=e106]: Hover effects and responsive grid layout in the demo
+        - generic [ref=e20]:
+          - textbox "Describe the React component you want to create..." [ref=e21]
+          - button [disabled] [ref=e22]:
+            - img [ref=e23]
+    - separator [ref=e26]
+    - generic [ref=e28]:
+      - generic [ref=e29]:
+        - tablist [ref=e31]:
+          - tab "Preview" [ref=e32]
+          - tab "Code" [selected] [ref=e33]
+        - generic [ref=e34]:
+          - button "Sign In" [ref=e35]
+          - button "Sign Up" [ref=e36]
+      - generic [ref=e108]:
+        - generic [ref=e114]:
+          - generic [ref=e115]:
+            - generic [ref=e116] [cursor=pointer]:
+              - img [ref=e117]
+              - img [ref=e119]
+              - generic [ref=e121]: components
+            - generic [ref=e124] [cursor=pointer]:
+              - img [ref=e125]
+              - generic [ref=e130]: PricingCard.jsx
+          - generic [ref=e132] [cursor=pointer]:
+            - img [ref=e133]
+            - generic [ref=e138]: App.jsx
+        - separator [ref=e139]
+        - code [ref=e144]:
+          - generic [ref=e145]:
+            - generic [ref=e147]:
+              - generic [ref=e464]:
+                - generic [ref=e465] [cursor=pointer]: 
+                - generic [ref=e466]: "1"
+              - generic [ref=e154]: "2"
+              - generic [ref=e468]: "3"
+              - generic [ref=e470]: "4"
+              - generic [ref=e472]: "5"
+              - generic [ref=e474]: "6"
+              - generic [ref=e476]: "7"
+              - generic [ref=e173]: "8"
+              - generic [ref=e477]:
+                - generic [ref=e478] [cursor=pointer]: 
+                - generic [ref=e479]: "9"
+              - generic [ref=e480]:
+                - generic [ref=e481] [cursor=pointer]: 
+                - generic [ref=e482]: "10"
+              - generic [ref=e483]:
+                - generic [ref=e484] [cursor=pointer]: 
+                - generic [ref=e485]: "11"
+              - generic [ref=e486]:
+                - generic [ref=e487] [cursor=pointer]: 
+                - generic [ref=e488]: "12"
+              - generic [ref=e184]: "13"
+              - generic [ref=e186]: "14"
+              - generic [ref=e489]:
+                - generic [ref=e490] [cursor=pointer]: 
+                - generic [ref=e491]: "15"
+              - generic [ref=e492]:
+                - generic [ref=e493] [cursor=pointer]: 
+                - generic [ref=e494]: "16"
+              - generic [ref=e192]: "17"
+              - generic [ref=e194]: "18"
+              - generic [ref=e196]: "19"
+              - generic [ref=e496]: "20"
+              - generic [ref=e497]:
+                - generic [ref=e498] [cursor=pointer]: 
+                - generic [ref=e499]: "21"
+              - generic [ref=e203]: "22"
+              - generic [ref=e508]: "23"
+              - generic [ref=e511]: "24"
+              - generic [ref=e513]: "25"
+            - generic [ref=e394]:
+              - generic [ref=e623]: "export default function PricingCard({"
+              - generic [ref=e625]: title,
+              - generic [ref=e627]: price,
+              - generic [ref=e629]: period,
+              - generic [ref=e631]: features,
+              - generic [ref=e633]: buttonText,
+              - generic [ref=e635]: buttonVariant = 'primary',
+              - generic [ref=e637]: highlighted = false
+              - generic [ref=e639]: "}) {"
+              - generic [ref=e641]: return (
+              - generic [ref=e643]: <div
+              - generic [ref=e645]: "className={`rounded-lg shadow-lg"
+              - generic [ref=e647]: highlighted ? 'ring-2 ring-blue-500
+              - generic [ref=e649]: "}`}"
+              - generic [ref=e651]: ">"
+              - generic [ref=e653]: "<div className={`p-8 ${highlighted ?"
+              - generic [ref=e655]: "{/* Title */}"
+              - generic [ref=e657]: <h3 className="text-2xl font-bold
+              - generic [ref=e660]: "{/* Price */}"
+              - generic [ref=e662]: <div className="mb-6">
+              - generic [ref=e664]: <span className="text-5xl font-bold
+              - generic [ref=e666]: overflow-hidden transition-transform
+              - generic [ref=e668]: duration-300 hover:shadow-xl
+              - generic [ref=e670]: "hover:scale-105 ${"
+              - generic [ref=e672]: "md:scale-105' : ''"
+              - generic [ref=e674]: "'bg-blue-50' : 'bg-white'}`}>"
+              - generic [ref=e676]: "text-gray-900 mb-2\">{title}</h3>"
+              - generic [ref=e678]: "text-gray-900\">{price}</span>"
+              - generic [ref=e680]: <span className="text-gray-600 ml-2">
+              - generic [ref=e682]: "{period}</span>"
+              - generic [ref=e684]: </div>
+            - textbox "Editor content" [ref=e461]: "}`} > {buttonText} </button> </div> </div> ); }"
+  - alert [ref=e47]
+  - generic [ref=e462]:
+    - alert
+    - alert

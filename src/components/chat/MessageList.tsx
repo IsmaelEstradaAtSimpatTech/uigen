@@ -10,6 +10,45 @@ interface MessageListProps {
   isLoading?: boolean;
 }
 
+function getToolFriendlyName(
+  toolName: string,
+  args: Record<string, any> | undefined,
+  done: boolean
+): string {
+  const fileName = args?.path ? args.path.split("/").pop() : undefined;
+  const target = fileName ? ` ${fileName}` : "";
+
+  if (toolName === "str_replace_editor") {
+    switch (args?.command) {
+      case "create":
+        return done ? `Created${target}` : `Creating${target}...`;
+      case "str_replace":
+      case "insert":
+        return done ? `Edited${target}` : `Editing${target}...`;
+      case "view":
+        return done ? `Viewed${target}` : `Viewing${target}...`;
+      case "undo_edit":
+        return done ? "Reverted changes" : "Reverting changes...";
+    }
+  }
+
+  if (toolName === "file_manager") {
+    switch (args?.command) {
+      case "rename": {
+        const newName = args?.new_path
+          ? args.new_path.split("/").pop()
+          : undefined;
+        const rename = newName ? ` to ${newName}` : "";
+        return done ? `Renamed${target}${rename}` : `Renaming${target}${rename}...`;
+      }
+      case "delete":
+        return done ? `Deleted${target}` : `Deleting${target}...`;
+    }
+  }
+
+  return toolName;
+}
+
 export function MessageList({ messages, isLoading }: MessageListProps) {
   if (messages.length === 0) {
     return (
@@ -76,17 +115,23 @@ export function MessageList({ messages, isLoading }: MessageListProps) {
                             );
                           case "tool-invocation":
                             const tool = part.toolInvocation;
+                            const isDone = tool.state === "result" && !!tool.result;
+                            const label = getToolFriendlyName(
+                              tool.toolName,
+                              tool.args,
+                              isDone
+                            );
                             return (
-                              <div key={partIndex} className="inline-flex items-center gap-2 mt-2 px-3 py-1.5 bg-neutral-50 rounded-lg text-xs font-mono border border-neutral-200">
-                                {tool.state === "result" && tool.result ? (
+                              <div key={partIndex} className="inline-flex items-center gap-2 mt-2 px-3 py-1.5 bg-neutral-50 rounded-lg text-xs border border-neutral-200">
+                                {isDone ? (
                                   <>
                                     <div className="w-2 h-2 rounded-full bg-emerald-500"></div>
-                                    <span className="text-neutral-700">{tool.toolName}</span>
+                                    <span className="text-neutral-700">{label}</span>
                                   </>
                                 ) : (
                                   <>
                                     <Loader2 className="w-3 h-3 animate-spin text-blue-600" />
-                                    <span className="text-neutral-700">{tool.toolName}</span>
+                                    <span className="text-neutral-700">{label}</span>
                                   </>
                                 )}
                               </div>
