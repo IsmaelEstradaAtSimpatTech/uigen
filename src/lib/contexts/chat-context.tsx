@@ -7,7 +7,7 @@ import {
   useEffect,
 } from "react";
 import { useChat as useAIChat } from "@ai-sdk/react";
-import { ChatRequestOptions, Message } from "ai";
+import { Message } from "ai";
 import { useFileSystem } from "./file-system-context";
 import { setHasAnonWork } from "@/lib/anon-work-tracker";
 
@@ -20,10 +20,7 @@ interface ChatContextType {
   messages: Message[];
   input: string;
   handleInputChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
-  handleSubmit: (
-    e?: { preventDefault?: () => void },
-    chatRequestOptions?: ChatRequestOptions
-  ) => void;
+  handleSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
   status: string;
 }
 

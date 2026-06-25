@@ -126,22 +126,6 @@ export function MessageList({ messages, isLoading }: MessageListProps) {
                       <span className="text-sm">Generating...</span>
                     </div>
                   ) : null}
-
-                  {message.role === "user" &&
-                  message.experimental_attachments &&
-                  message.experimental_attachments.length > 0 ? (
-                    <div className="mt-3 grid grid-cols-2 gap-2">
-                      {message.experimental_attachments.map((attachment, attachmentIndex) => (
-                        // eslint-disable-next-line @next/next/no-img-element
-                        <img
-                          key={`${attachment.url}-${attachmentIndex}`}
-                          src={attachment.url}
-                          alt={attachment.name || "Attached image"}
-                          className="h-24 w-full rounded-md object-cover"
-                        />
-                      ))}
-                    </div>
-                  ) : null}
                 </div>
               </div>
             </div>
